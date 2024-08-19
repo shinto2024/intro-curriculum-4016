@@ -34,5 +34,5 @@ describe("/login", () => {
     const res = await app.request("/logout");
     expect(res.headers.get("Location")).toBe("/");
     expect(res.status).toBe(302);
-  })
+  });
 });
